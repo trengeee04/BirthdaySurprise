@@ -1,0 +1,57 @@
+/* ============================================
+   💫 SPIRAL GALLERY SECTION
+   ============================================ */
+
+.spiral-gallery {
+  padding: 60px 0 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.spiral-gallery-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.spiral-gallery-header h2 {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  color: var(--text-primary);
+}
+
+.spiral-gallery-header p {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-top: 8px;
+}
+
+.spiral-gallery-container {
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 182, 193, 0.06) 0%,
+    transparent 70%
+  );
+}
+
+/* ── Responsive ────────────────────────────── */
+@media (max-width: 768px) {
+  .spiral-gallery-container {
+    height: 480px;
+  }
+
+  .spiral-gallery-header h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .spiral-gallery-container {
+    height: 400px;
+  }
+}

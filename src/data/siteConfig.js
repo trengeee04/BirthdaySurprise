@@ -35,6 +35,7 @@ const siteConfig = {
   finalLine1: "If there is one thing I hope you remember from all of this...",
   finalLine2: "You mean more to me than I could ever fit into a website.",
   finalLine3: "Thank you for being born. Thank you for being you. ❤️",
+  finalline4: "I'll be ur bhondu pest forever ❤️",
   finalClosing: "Happy Birthday, Amrugaa. ❤️🎂",
 
   // ── Easter Egg ─────────────────────────────

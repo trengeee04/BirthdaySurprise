@@ -7,19 +7,24 @@
 
 const playlist = [
   {
-    title: "Your Favorite Song",
-    artist: "Her Favorite Artist",
-    src: "/assets/music/song1.mp3",
+    title: "Home",
+    artist: "Charlie Puth ft. Hikaru Utada",
+    src: "/assets/music/home.mp3",
   },
   {
-    title: "Our Song",
-    artist: "That Special Artist",
-    src: "/assets/music/song2.mp3",
+    title: "Pyar Ki Si",
+    artist: "Nanku, Lambo Drive",
+    src: "/assets/music/pyar-ki-si.mp3",
   },
   {
-    title: "The One That Reminds Me of You",
-    artist: "Another Artist",
-    src: "/assets/music/song3.mp3",
+    title: "Reckless",
+    artist: "Madison Beer",
+    src: "/assets/music/reckless.mp3",
+  },
+  {
+    title: "Can't Help Falling in Love",
+    artist: "Elvis Presley",
+    src: "/assets/music/cant-help-falling-in-love.mp3",
   },
 ];
 

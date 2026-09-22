@@ -45,11 +45,21 @@ export default function FinalScreen() {
         {siteConfig.finalLine3}
       </motion.p>
 
+      <motion.p
+        className="final-screen-line highlight"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.7, delay: 2.4 }}
+      >
+        {siteConfig.finalline4}
+      </motion.p>
+
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.6, delay: 2.4, type: "spring", stiffness: 200 }}
+        transition={{ duration: 0.6, delay: 3.0, type: "spring", stiffness: 200 }}
       >
         <span className="final-screen-heart" aria-hidden="true">
           ❤️
@@ -61,7 +71,7 @@ export default function FinalScreen() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.7, delay: 3.0 }}
+        transition={{ duration: 0.7, delay: 3.6 }}
       >
         {siteConfig.finalClosing}
       </motion.p>

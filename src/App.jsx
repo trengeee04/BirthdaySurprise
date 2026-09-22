@@ -14,6 +14,7 @@ import TransitionScreen from "./components/TransitionScreen";
 import FinalLetter from "./components/FinalLetter";
 import VideoSection from "./components/VideoSection";
 import MemoryGallery from "./components/MemoryGallery";
+import SpiralGallery from "./components/SpiralGallery";
 import FinalScreen from "./components/FinalScreen";
 
 // Hooks
@@ -166,6 +167,7 @@ export default function App() {
           >
             <FinalLetter />
             <VideoSection />
+            <SpiralGallery />
             <MemoryGallery />
             <FinalScreen />
           </motion.div>

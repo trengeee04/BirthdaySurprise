@@ -19,6 +19,7 @@ export default function EasterEgg() {
         title="Click me!"
       >
         💗
+        <span className="easter-egg-hint">click me for a surprise :)</span>
       </button>
 
       <AnimatePresence>

@@ -52,6 +52,7 @@ export default function MusicPlayer({ player }) {
           >
             {/* Now Playing */}
             <div className="music-player-now-playing">
+              <div className="music-player-label">These songs reminds me of you :3 🎶</div>
               <div className="music-player-title">{currentSong.title}</div>
               <div className="music-player-artist">{currentSong.artist}</div>
             </div>
@@ -146,9 +147,8 @@ export default function MusicPlayer({ player }) {
                   {playlist.map((song, index) => (
                     <button
                       key={index}
-                      className={`music-player-playlist-item ${
-                        index === currentIndex ? "active" : ""
-                      }`}
+                      className={`music-player-playlist-item ${index === currentIndex ? "active" : ""
+                        }`}
                       onClick={() => playTrack(index)}
                     >
                       <span className="music-player-playlist-item-indicator">
