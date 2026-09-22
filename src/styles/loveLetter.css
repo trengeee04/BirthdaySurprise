@@ -1,0 +1,118 @@
+/* ============================================
+   💌 LOVE LETTER SECTIONS
+   ============================================ */
+
+.love-letter {
+  padding: 40px 0 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.love-letter-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.love-letter-header h2 {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  color: var(--text-primary);
+}
+
+.love-letter-header p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-top: 8px;
+}
+
+.love-letter-card {
+  padding: 36px 32px;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.love-letter-card::before {
+  content: '❤️';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 3rem;
+  opacity: 0.06;
+  transform: rotate(15deg);
+}
+
+.love-letter-card-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--pink-500);
+  margin-bottom: 14px;
+}
+
+.love-letter-card-text {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+}
+
+.love-letter-divider {
+  text-align: center;
+  padding: 16px 0;
+  font-size: 0.9rem;
+  color: var(--pink-300);
+  letter-spacing: 4px;
+  user-select: none;
+}
+
+.love-letter-continue {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.love-letter-continue-btn {
+  background: var(--gradient-pink);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 16px 40px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-medium);
+  transition: all var(--transition-spring);
+}
+
+.love-letter-continue-btn:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+/* ── Responsive ────────────────────────────── */
+@media (max-width: 768px) {
+  .love-letter-card {
+    padding: 28px 24px;
+  }
+
+  .love-letter-card-title {
+    font-size: 1.7rem;
+  }
+
+  .love-letter-card-text {
+    font-size: 1rem;
+  }
+
+  .love-letter-header h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .love-letter-card {
+    padding: 24px 20px;
+    margin-bottom: 20px;
+  }
+
+  .love-letter-card-title {
+    font-size: 1.5rem;
+  }
+}

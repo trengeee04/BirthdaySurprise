@@ -1,0 +1,195 @@
+/* ============================================
+   🎀 DESIGN SYSTEM — Pastel Romantic Theme
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── CSS Variables ─────────────────────────── */
+:root {
+  --pink-50: #fff5f7;
+  --pink-100: #fff0f3;
+  --pink-200: #ffd6e0;
+  --pink-300: #ffb3c6;
+  --pink-400: #ff8fab;
+  --pink-500: #ff6b8a;
+  --pink-600: #e84573;
+  --blush: #e8a0bf;
+  --lavender: #c8b6e2;
+  --lavender-light: #ede7f6;
+  --cream: #fdf6f0;
+  --peach: #ffecd2;
+  --peach-light: #fff3e6;
+  --white: #ffffff;
+  --rose-gold: #b76e79;
+
+  --text-primary: #5c374c;
+  --text-secondary: #8b5e83;
+  --text-light: #a8809e;
+  --text-on-pink: #ffffff;
+
+  --glass-bg: rgba(255, 255, 255, 0.3);
+  --glass-bg-heavy: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-shadow: 0 8px 32px rgba(255, 107, 138, 0.12);
+
+  --shadow-soft: 0 4px 20px rgba(255, 107, 138, 0.12);
+  --shadow-medium: 0 8px 32px rgba(255, 107, 138, 0.18);
+  --shadow-glow: 0 0 30px rgba(255, 107, 138, 0.25);
+  --shadow-card: 0 10px 40px rgba(92, 55, 76, 0.08);
+
+  --radius-sm: 12px;
+  --radius: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 40px;
+  --radius-full: 9999px;
+
+  --font-heading: 'Caveat', cursive;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --transition-fast: 0.2s ease;
+  --transition: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-spring: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --gradient-bg: linear-gradient(135deg, var(--pink-100) 0%, var(--cream) 30%, var(--peach-light) 60%, var(--lavender-light) 100%);
+  --gradient-pink: linear-gradient(135deg, var(--pink-400) 0%, var(--pink-500) 50%, var(--blush) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.6) 0%, rgba(255,240,243,0.4) 100%);
+}
+
+/* ── Reset ─────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: var(--gradient-bg);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--pink-400);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Typography ────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* ── Utility Classes ───────────────────────── */
+.glass-card {
+  background: var(--glass-bg-heavy);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+}
+
+.section-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* ── Scrollbar ─────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pink-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pink-300);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pink-400);
+}
+
+/* ── Selection ─────────────────────────────── */
+::selection {
+  background: var(--pink-200);
+  color: var(--text-primary);
+}
+
+/* ── Reduced Motion ────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ── Responsive ────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+
+  .section-container {
+    padding: 30px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .section-container {
+    padding: 24px 16px;
+  }
+}

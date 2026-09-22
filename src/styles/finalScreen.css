@@ -1,0 +1,165 @@
+/* ============================================
+   ❤️ FINAL SCREEN & FINAL LETTER
+   ============================================ */
+
+/* ── Final Letter ──────────────────────────── */
+.final-letter {
+  padding: 80px 0 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.final-letter-content {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.final-letter-greeting {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: var(--pink-500);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.final-letter-intro {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  font-style: italic;
+}
+
+.final-letter-paragraph {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.final-letter-ending {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-top: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-style: italic;
+}
+
+.final-letter-signature {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.final-letter-signature-line {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.final-letter-signature-name {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  color: var(--pink-500);
+}
+
+/* ── Final Screen ──────────────────────────── */
+.final-screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.final-screen-name {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 32px;
+}
+
+.final-screen-line {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+.final-screen-line.highlight {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.final-screen-heart {
+  font-size: 4rem;
+  margin: 32px 0;
+  animation: heartBeat 1.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+.final-screen-closing {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  color: var(--pink-500);
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+/* ── Responsive ────────────────────────────── */
+@media (max-width: 768px) {
+  .final-letter {
+    padding: 60px 0 40px;
+  }
+
+  .final-letter-greeting {
+    font-size: 2.4rem;
+  }
+
+  .final-screen-name {
+    font-size: 2.8rem;
+  }
+
+  .final-screen-line {
+    font-size: 1.3rem;
+  }
+
+  .final-screen-line.highlight {
+    font-size: 1.5rem;
+  }
+
+  .final-screen-closing {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .final-letter-greeting {
+    font-size: 2rem;
+  }
+
+  .final-screen-name {
+    font-size: 2.2rem;
+  }
+
+  .final-screen-line {
+    font-size: 1.15rem;
+  }
+
+  .final-screen-heart {
+    font-size: 3rem;
+  }
+}

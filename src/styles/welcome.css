@@ -1,0 +1,189 @@
+/* ============================================
+   🏠 WELCOME SCREEN
+   ============================================ */
+
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  text-align: center;
+  padding: 40px 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-greeting {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.welcome-birthday-emojis {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+  letter-spacing: 12px;
+  animation: gentleBounce 3s ease-in-out infinite;
+}
+
+.welcome-subtext {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  font-weight: 300;
+}
+
+.welcome-birthday-wish {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--blush);
+  margin-bottom: 36px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.welcome-button {
+  background: var(--gradient-pink);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 18px 40px;
+  border-radius: var(--radius-full);
+  border: none;
+  box-shadow: var(--shadow-medium);
+  transition: all var(--transition-spring);
+  position: relative;
+  overflow: hidden;
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.welcome-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.welcome-button:hover {
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: var(--shadow-glow);
+}
+
+.welcome-button:active {
+  transform: scale(0.97);
+}
+
+/* ── Music Prompt ──────────────────────────── */
+.music-prompt-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  background: rgba(253, 246, 240, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.music-prompt-card {
+  text-align: center;
+  padding: 48px 40px;
+  max-width: 420px;
+  width: 90%;
+}
+
+.music-prompt-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  display: block;
+  animation: gentleBounce 2s ease-in-out infinite;
+}
+
+.music-prompt-text {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 32px;
+}
+
+.music-prompt-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.music-prompt-play {
+  background: var(--gradient-pink);
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 14px 36px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-spring);
+  width: 100%;
+  max-width: 260px;
+}
+
+.music-prompt-play:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.music-prompt-skip {
+  background: transparent;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition);
+}
+
+.music-prompt-skip:hover {
+  color: var(--text-secondary);
+  background: var(--pink-50);
+}
+
+/* ── Responsive ────────────────────────────── */
+@media (max-width: 768px) {
+  .welcome-greeting {
+    font-size: 3rem;
+  }
+
+  .welcome-subtext {
+    font-size: 1.1rem;
+    margin-bottom: 36px;
+  }
+
+  .welcome-button {
+    font-size: 1.3rem;
+    padding: 16px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-greeting {
+    font-size: 2.4rem;
+  }
+
+  .welcome-subtext {
+    font-size: 1rem;
+  }
+
+  .welcome-button {
+    font-size: 1.15rem;
+    padding: 14px 28px;
+  }
+}

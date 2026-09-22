@@ -1,0 +1,128 @@
+/* ============================================
+   📸 MEMORY GALLERY (Polaroid Scrapbook)
+   ============================================ */
+
+.memory-gallery {
+  padding: 60px 0 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.memory-gallery-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.memory-gallery-header h2 {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  color: var(--text-primary);
+}
+
+.memory-gallery-header p {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-top: 8px;
+}
+
+.memory-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.memory-polaroid {
+  background: var(--white);
+  padding: 14px 14px 42px;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(92, 55, 76, 0.1), 0 1px 4px rgba(0,0,0,0.05);
+  transition: all var(--transition);
+  cursor: default;
+  position: relative;
+}
+
+.memory-polaroid:nth-child(odd) {
+  transform: rotate(-2deg);
+}
+
+.memory-polaroid:nth-child(even) {
+  transform: rotate(1.5deg);
+}
+
+.memory-polaroid:nth-child(3n) {
+  transform: rotate(-1deg);
+}
+
+.memory-polaroid:hover {
+  transform: rotate(0deg) scale(1.04) translateY(-6px);
+  box-shadow: 0 12px 40px rgba(92, 55, 76, 0.15);
+}
+
+.memory-polaroid-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 2px;
+  background: linear-gradient(135deg, var(--pink-100), var(--peach));
+}
+
+.memory-polaroid-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--pink-100), var(--peach-light), var(--lavender-light));
+  border-radius: 2px;
+  font-size: 2.5rem;
+  opacity: 0.4;
+}
+
+.memory-polaroid-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 14px;
+  right: 14px;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* ── Tape decoration ───────────────────────── */
+.memory-polaroid::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 50px;
+  height: 18px;
+  background: rgba(255, 220, 180, 0.6);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* ── Responsive ────────────────────────────── */
+@media (max-width: 768px) {
+  .memory-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .memory-gallery-header h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .memory-gallery-grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    gap: 28px;
+  }
+}
