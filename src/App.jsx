@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 // Components
@@ -16,6 +16,7 @@ import VideoSection from "./components/VideoSection";
 import MemoryGallery from "./components/MemoryGallery";
 import SpiralGallery from "./components/SpiralGallery";
 import FinalScreen from "./components/FinalScreen";
+import StageNav from "./components/StageNav";
 
 // Hooks
 import useAudioPlayer from "./hooks/useAudioPlayer";
@@ -44,7 +45,16 @@ const pageTransition = {
 export default function App() {
   const [stage, setStage] = useState(0);
   const [musicEnabled, setMusicEnabled] = useState(false);
+  const hasReachedEnd = useRef(false);
+  const [navUnlocked, setNavUnlocked] = useState(false);
   const player = useAudioPlayer();
+
+  useEffect(() => {
+    if (stage === 5 && !hasReachedEnd.current) {
+      hasReachedEnd.current = true;
+      setNavUnlocked(true);
+    }
+  }, [stage]);
 
   const goToStage = useCallback((nextStage) => {
     window.scrollTo({ top: 0, behavior: "instant" });
@@ -88,6 +98,9 @@ export default function App() {
 
       {/* Music Player — visible after music prompt */}
       {(musicEnabled || stage >= 2) && <MusicPlayer player={player} />}
+
+      {/* Stage Navigation — unlocks after reaching the finale */}
+      {navUnlocked && <StageNav stage={stage} goToStage={goToStage} />}
 
       {/* Main Content */}
       <AnimatePresence mode="wait">

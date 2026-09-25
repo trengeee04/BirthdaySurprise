@@ -1,0 +1,106 @@
+/* ============================================
+   🧭 STAGE NAVIGATION
+   ============================================ */
+
+.stage-nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--glass-bg-heavy);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  padding: 8px 16px;
+  box-shadow: var(--shadow-soft);
+}
+
+.stage-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.stage-nav-btn:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.stage-nav-icon {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.stage-nav-arrow {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--pink-500);
+  line-height: 1;
+}
+
+.stage-nav-btn:disabled .stage-nav-arrow {
+  color: var(--text-light);
+}
+
+/* ── Progress Dots ─────────────────────────── */
+
+.stage-nav-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stage-nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid var(--pink-300);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.stage-nav-dot.visited {
+  background: var(--pink-200);
+}
+
+.stage-nav-dot.active {
+  background: var(--pink-500);
+  border-color: var(--pink-500);
+  transform: scale(1.3);
+  box-shadow: 0 0 8px rgba(255, 107, 138, 0.4);
+}
+
+.stage-nav-dot:hover {
+  border-color: var(--pink-500);
+  transform: scale(1.2);
+}
+
+/* ── Responsive ────────────────────────────── */
+@media (max-width: 480px) {
+  .stage-nav {
+    padding: 6px 12px;
+    gap: 8px;
+  }
+
+  .stage-nav-icon {
+    display: none;
+  }
+
+  .stage-nav-dot {
+    width: 7px;
+    height: 7px;
+  }
+}

@@ -26,6 +26,31 @@ const playlist = [
     artist: "Elvis Presley",
     src: "/assets/music/cant-help-falling-in-love.mp3",
   },
+  {
+    title: "Aperture",
+    artist: "Harry Styles",
+    src: "/assets/music/aperture.mp3",
+  },
+  {
+    title: "High on You",
+    artist: "Jind Universe",
+    src: "/assets/music/high-on-you.mp3",
+  },
+  {
+    title: "Colors",
+    artist: "Jake Llaguno",
+    src: "/assets/music/colors.mp3",
+  },
+  {
+    title: "Duniyaa",
+    artist: "Akhil & Dhvani Bhanushali",
+    src: "/assets/music/duniyaa.mp3",
+  },
+  {
+    title: "Chidiya",
+    artist: "Vilen",
+    src: "/assets/music/chidiya.mp3",
+  },
 ];
 
 export default playlist;
