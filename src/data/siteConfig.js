@@ -28,7 +28,7 @@ const siteConfig = {
   // ── Video Section ──────────────────────────
   videoIntro: "There's one more thing I made for you...",
   videoButton: "Watch this ❤️",
-  videoSrc: "/assets/videos/amrugaa-video.mp4",
+  videoSrc: "/assets/videos/6C3DD02E-643D-4BA7-B185-C320224C30C3.mov",
   videoPoster: "/assets/videos/poster.jpg",
 
   // ── Final Screen ───────────────────────────

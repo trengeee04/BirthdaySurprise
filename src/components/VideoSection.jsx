@@ -29,14 +29,14 @@ export default function VideoSection() {
         >
           {!videoError ? (
             <video
+              className="video-player"
+              src={`${siteConfig.videoSrc}#t=0.001`}
               controls
               muted
               playsInline
               preload="metadata"
-              poster={siteConfig.videoPoster}
               onError={() => setVideoError(true)}
             >
-              <source src={siteConfig.videoSrc} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           ) : (

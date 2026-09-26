@@ -29,7 +29,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 32px;
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -40,7 +40,7 @@
   border-radius: 4px;
   box-shadow: 0 4px 20px rgba(92, 55, 76, 0.1), 0 1px 4px rgba(0,0,0,0.05);
   transition: all var(--transition);
-  cursor: default;
+  cursor: pointer;
   position: relative;
 }
 
@@ -67,6 +67,35 @@
   object-fit: cover;
   border-radius: 2px;
   background: linear-gradient(135deg, var(--pink-100), var(--peach));
+  display: block;
+}
+
+.memory-polaroid-video-wrapper {
+  position: relative;
+}
+
+.memory-polaroid-play-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 107, 138, 0.85);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding-left: 3px;
+  box-shadow: 0 4px 16px rgba(255, 107, 138, 0.3);
+  transition: transform 0.25s ease;
+  pointer-events: none;
+}
+
+.memory-polaroid:hover .memory-polaroid-play-badge {
+  transform: translate(-50%, -50%) scale(1.15);
 }
 
 .memory-polaroid-placeholder {
@@ -106,6 +135,124 @@
   box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 
+/* ============================================
+   🖼️ FULLSCREEN LIGHTBOX
+   ============================================ */
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(30, 15, 25, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90vw;
+  max-height: 90vh;
+  gap: 16px;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  z-index: 10;
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 107, 138, 0.5);
+  transform: scale(1.1);
+}
+
+.lightbox-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 85vw;
+  max-height: 75vh;
+}
+
+.lightbox-image {
+  max-width: 85vw;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox-video {
+  max-width: 85vw;
+  max-height: 75vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  background: black;
+}
+
+.lightbox-caption {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  max-width: 600px;
+}
+
+/* ── Lightbox Navigation ───────────────────── */
+
+.lightbox-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  z-index: 10;
+}
+
+.lightbox-nav:hover {
+  background: rgba(255, 107, 138, 0.4);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-nav-prev {
+  left: 20px;
+}
+
+.lightbox-nav-next {
+  right: 20px;
+}
+
 /* ── Responsive ────────────────────────────── */
 @media (max-width: 768px) {
   .memory-gallery-grid {
@@ -116,6 +263,25 @@
 
   .memory-gallery-header h2 {
     font-size: 2.2rem;
+  }
+
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+
+  .lightbox-nav-prev {
+    left: 10px;
+  }
+
+  .lightbox-nav-next {
+    right: 10px;
+  }
+
+  .lightbox-caption {
+    font-size: 1.2rem;
+    padding: 0 16px;
   }
 }
 

@@ -1,19 +1,13 @@
 import { motion } from "framer-motion";
 import useInView from "../hooks/useInView";
 import InfiniteSpiral from "./InfiniteSpiral";
-import memories from "../data/memories";
+import spiralImages from "../data/spiralImages";
 import "../styles/spiralGallery.css";
-
-// Convert the existing memories data format to InfiniteSpiral's expected format
-const spiralItems = memories.map((memory) => ({
-  src: memory.image,
-  alt: memory.caption,
-}));
 
 export default function SpiralGallery() {
   const [headerRef, headerInView] = useInView({ threshold: 0.3 });
 
-  if (spiralItems.length === 0) return null;
+  if (spiralImages.length === 0) return null;
 
   return (
     <div className="spiral-gallery">
@@ -30,7 +24,7 @@ export default function SpiralGallery() {
 
       <div className="spiral-gallery-container">
         <InfiniteSpiral
-          items={spiralItems}
+          items={spiralImages}
           animationMode="all"
           speed={0.55}
           radius={170}
