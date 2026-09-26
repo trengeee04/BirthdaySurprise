@@ -29,7 +29,7 @@ const siteConfig = {
   videoIntro: "There's one more thing I made for you...",
   videoButton: "Watch this ❤️",
   videoSrc: "/assets/videos/6C3DD02E-643D-4BA7-B185-C320224C30C3.mov",
-  videoPoster: "/assets/videos/poster.jpg",
+  videoPoster: "/assets/videos/amrugaa-video.mp4",
 
   // ── Final Screen ───────────────────────────
   finalLine1: "If there is one thing I hope you remember from all of this...",
