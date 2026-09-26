@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import useInView from "../hooks/useInView";
 import memories from "../data/memories";
@@ -72,7 +73,7 @@ function Lightbox({ memory, onClose, onPrev, onNext }) {
     };
   }, [onClose, onPrev, onNext]);
 
-  return (
+  return createPortal(
     <motion.div
       className="lightbox-overlay"
       initial={{ opacity: 0 }}
@@ -121,7 +122,8 @@ function Lightbox({ memory, onClose, onPrev, onNext }) {
 
         <p className="lightbox-caption">{memory.caption}</p>
       </motion.div>
-    </motion.div>
+    </motion.div>,
+    document.body
   );
 }
 
