@@ -28,7 +28,8 @@ const InfiniteSpiral = ({
   pauseOnHover = true,
   imageFit = 'cover',
   grayscale = 0,
-  className = ''
+  className = '',
+  onItemClick
 }) => {
   const rootRef = useRef(null);
   const cardRefs = useRef([]);
@@ -40,6 +41,8 @@ const InfiniteSpiral = ({
   const draggingRef = useRef(false);
   const lastPointerYRef = useRef(0);
   const dragMovedRef = useRef(false);
+  const dragStartYRef = useRef(0);
+  const clickedItemIndexRef = useRef(null);
 
   const normalizedItems = useMemo(
     () =>
@@ -185,10 +188,17 @@ const InfiniteSpiral = ({
   const stopDragging = event => {
     if (!draggingRef.current) return;
     draggingRef.current = false;
+    
     if (event.currentTarget.hasPointerCapture(event.pointerId)) {
       event.currentTarget.releasePointerCapture(event.pointerId);
     }
     event.currentTarget.style.cursor = dragEnabled ? 'grab' : 'default';
+
+    // If we didn't drag, and we clicked on an item, trigger the click
+    if (!dragMovedRef.current && clickedItemIndexRef.current !== null) {
+      if (onItemClick) onItemClick(clickedItemIndexRef.current);
+    }
+    clickedItemIndexRef.current = null;
   };
 
   return (
@@ -207,6 +217,7 @@ const InfiniteSpiral = ({
         draggingRef.current = true;
         dragMovedRef.current = false;
         lastPointerYRef.current = event.clientY;
+        dragStartYRef.current = event.clientY;
         targetProgressRef.current = progressRef.current;
         event.currentTarget.setPointerCapture(event.pointerId);
         event.currentTarget.style.cursor = 'grabbing';
@@ -215,7 +226,7 @@ const InfiniteSpiral = ({
         if (!draggingRef.current) return;
         const pointerDelta = event.clientY - lastPointerYRef.current;
         lastPointerYRef.current = event.clientY;
-        if (Math.abs(pointerDelta) > 0.5) dragMovedRef.current = true;
+        if (Math.abs(event.clientY - dragStartYRef.current) > 5) dragMovedRef.current = true;
         targetProgressRef.current -= pointerDelta / Math.max(verticalSpacing, 1);
       }}
       onPointerUp={stopDragging}
@@ -237,12 +248,19 @@ const InfiniteSpiral = ({
                 cardRefs.current[index] = node;
               }}
               className="infinite-spiral__item"
-              style={{ width: cardWidth, height: cardHeight, borderRadius: cardRadius }}
+              style={{ width: cardWidth, height: cardHeight, borderRadius: cardRadius, cursor: onItemClick ? 'pointer' : 'default' }}
               href={item.href}
               target={item.target}
               rel={item.target === '_blank' ? 'noreferrer' : undefined}
               role="listitem"
               aria-label={item.label ?? item.alt}
+              onPointerDown={() => {
+                clickedItemIndexRef.current = index;
+              }}
+              onDoubleClick={() => {
+                if (item.onClick) item.onClick(index);
+                if (onItemClick) onItemClick(index);
+              }}
             >
               <img
                 className="infinite-spiral__image"

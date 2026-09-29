@@ -19,6 +19,10 @@ export default function useAudioPlayer() {
 
     const handleTimeUpdate = () => setCurrentTime(audio.currentTime);
     const handleLoadedMetadata = () => setDuration(audio.duration);
+    const handleVolumeChange = () => {
+      setVolume(audio.volume);
+      setIsMuted(audio.muted || audio.volume === 0);
+    };
     const handleEnded = () => {
       // Auto-play next song
       setCurrentIndex((prev) => (prev + 1) % playlist.length);
@@ -30,12 +34,14 @@ export default function useAudioPlayer() {
 
     audio.addEventListener("timeupdate", handleTimeUpdate);
     audio.addEventListener("loadedmetadata", handleLoadedMetadata);
+    audio.addEventListener("volumechange", handleVolumeChange);
     audio.addEventListener("ended", handleEnded);
     audio.addEventListener("error", handleError);
 
     return () => {
       audio.removeEventListener("timeupdate", handleTimeUpdate);
       audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
+      audio.removeEventListener("volumechange", handleVolumeChange);
       audio.removeEventListener("ended", handleEnded);
       audio.removeEventListener("error", handleError);
       audio.pause();

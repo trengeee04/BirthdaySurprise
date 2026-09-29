@@ -10,36 +10,36 @@ const siteConfig = {
   myName: "Rudra",
 
   // ── Welcome Screen ─────────────────────────
-  welcomeGreeting: "Happy Birthday, Amrugaa! 🎂❤️",
-  welcomeSubtext: "I made something special for your special day.",
-  welcomeButton: "Come here, I have something to tell you 💗",
+  welcomeGreeting: "Happy Birthday, Amrugaa, My Everythinggg :3! 🎂❤️",
+  welcomeSubtext: "I tried to make something special for your special day.",
+  welcomeButton: "Come here, Imma tell you something :0 💗",
 
   // ── Music Prompt ───────────────────────────
-  musicPromptText: "Want some music while you read this? 🎧❤️",
+  musicPromptText: "I would totally recommend playing this with music :) 🎧❤️",
   musicPlayButton: "Play Music 🎵",
   musicSkipButton: "Maybe Later",
 
   // ── Transition (after questions) ───────────
   transitionLine1: "Okay...",
   transitionLine2: "You made it this far.",
-  transitionLine3: "Now I get to tell you what I really wanted to say.",
-  transitionButton: "Open my heart ❤️",
+  transitionLine3: "Omfg Can't believe you sat through all this lmfao and came this long",
+  transitionButton: "Open my never ending heart (only for you istg) :3 ❤️",
 
   // ── Video Section ──────────────────────────
-  videoIntro: "There's one more thing I made for you...",
-  videoButton: "Watch this ❤️",
+  videoIntro: "There's one more small lil something I made for you...",
+  videoButton: "Watch this :3 ❤️",
   videoSrc: "/assets/videos/6C3DD02E-643D-4BA7-B185-C320224C30C3.mov",
-  videoPoster: "/assets/videos/amrugaa-video.mp4",
+  videoPoster: "",
 
   // ── Final Screen ───────────────────────────
   finalLine1: "If there is one thing I hope you remember from all of this...",
   finalLine2: "You mean more to me than I could ever fit into a website.",
   finalLine3: "Thank you for being born. Thank you for being you. ❤️",
   finalline4: "I'll be ur bhondu pest forever ❤️",
-  finalClosing: "Happy Birthday, Amrugaa. ❤️🎂",
+  finalClosing: "Happy 20th Birthday, Amrugaa 'Ghochu Poncho' :3. ❤️🎂",
 
   // ── Easter Egg ─────────────────────────────
-  easterEggMessage: "Psst... I love you. ❤️",
+  easterEggMessage: "Psst psstt... Godi :3? I Love you so fucking much lmfao >.< ❤️",
 
   // ── Signature ──────────────────────────────
   signature: "With all my heart,",

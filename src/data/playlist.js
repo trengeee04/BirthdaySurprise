@@ -3,8 +3,18 @@
 
 const playlist = [
   {
-    title: "aperture",
+    title: "Colors (Official Lyric Video) Jake Llaguno",
     artist: "Unknown Artist",
+    src: "/assets/music/Colors (Official Lyric Video) Jake Llaguno.mp3",
+  },
+  {
+    title: "NAPA - Deslocado (Official Video)",
+    artist: "NAPA",
+    src: "/assets/music/NAPA - Deslocado (Official Video).mp3",
+  },
+  {
+    title: "Harry Styles - Aperture (Official Video)",
+    artist: "HarryStylesVEVO",
     src: "/assets/music/aperture.mp3",
   },
   {
@@ -18,14 +28,9 @@ const playlist = [
     src: "/assets/music/cant-help-falling-in-love.mp3",
   },
   {
-    title: "chidiya",
-    artist: "Unknown Artist",
+    title: "Vilen - Chidiya (Official  Video)",
+    artist: "Darks Music Company",
     src: "/assets/music/chidiya.mp3",
-  },
-  {
-    title: "colors",
-    artist: "Unknown Artist",
-    src: "/assets/music/colors.mp3",
   },
   {
     title: "duniyaa",
@@ -38,8 +43,8 @@ const playlist = [
     src: "/assets/music/high-on-you.mp3",
   },
   {
-    title: "home",
-    artist: "Unknown Artist",
+    title: "Charlie Puth - Home (feat. Hikaru Utada)",
+    artist: "Charlie Puth",
     src: "/assets/music/home.mp3",
   },
   {
@@ -48,8 +53,8 @@ const playlist = [
     src: "/assets/music/one-of-your-girls.mp3",
   },
   {
-    title: "pyar ki si",
-    artist: "Unknown Artist",
+    title: "Nanku, Lambo Drive - Pyar Ki Si [Lyrics]",
+    artist: "Nanku",
     src: "/assets/music/pyar-ki-si.mp3",
   },
   {

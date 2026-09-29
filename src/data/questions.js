@@ -7,8 +7,8 @@
 
 const questions = [
   {
-    question: "Did you miss me? 🥺❤️",
-    yesText: "YES ❤️",
+    question: "Did you miss me even so slightly :( ? 😭❤️",
+    yesText: "YES OMGGGG❤️",
     noTexts: [
       "No 😌",
       "Are you sure?",
@@ -32,8 +32,8 @@ const questions = [
     ],
   },
   {
-    question: "Did you smile at least once because of me? 👉👈",
-    yesText: "Obviously ❤️",
+    question: "Do you even like me lmfao? 👉👈",
+    yesText: "Obviously 😭",
     noTexts: [
       "Liar 😤",
       "I saw you smiling!",
@@ -54,7 +54,7 @@ const questions = [
   },
   {
     question: "Do you like having me around? ❤️",
-    yesText: "Always ❤️",
+    yesText: "Always :)",
     noTexts: [
       "Rude 😭",
       "That hurt a little",
@@ -73,10 +73,10 @@ const questions = [
     ],
   },
   {
-    question: "Do I make your days a little better? 🌸",
-    yesText: "You do ❤️",
+    question: "Have I ever made your days even a lil better? 🌸",
+    yesText: "Yes :)",
     noTexts: [
-      "That's cap 😂",
+      "Me nahi maanta 😂",
       "Ouch.",
       "Say that again?",
       "NO WAY you mean that",
@@ -92,9 +92,9 @@ const questions = [
   },
   {
     question: "Do you think about me sometimes? 👀",
-    yesText: "All the time ❤️",
+    yesText: "Maybe :) ",
     noTexts: [
-      "Cap detected 🧢",
+      "Hmphh...",
       "I think about you!",
       "Unfair 😤",
       "That button malfunctioned",
@@ -110,7 +110,7 @@ const questions = [
   },
   {
     question: "Am I your favorite person? 😏❤️",
-    yesText: "DUH ❤️",
+    yesText: "ahem ahem yeahh",
     noTexts: [
       "WHAT. 😭",
       "Okay wow.",
@@ -127,8 +127,8 @@ const questions = [
     ],
   },
   {
-    question: "Do you love me even just a little? 🥹❤️",
-    yesText: "More than a little ❤️",
+    question: "Do you still love me even just a little? :)",
+    yesText: "More than a little (this would actually make me cry😭)",
     noTexts: [
       "😭😭😭",
       "I refuse to accept that.",
@@ -164,8 +164,8 @@ const questions = [
     isTransition: true,
   },
   {
-    question: "Would you like to be mine forever? ❤️",
-    yesText: "Forever ❤️",
+    question: "Would you ever someday like to be mine forever? :(",
+    yesText: "(If 'Yes' then whisper 'anything random' close in my ear while we hug or don't if it's a 'No'😭❤️)",
     noTexts: [
       "Not an option 😭",
       "You're stuck with me",

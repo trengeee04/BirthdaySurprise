@@ -3,6 +3,50 @@
 
 const spiralImages = [
   {
+    src: "/assets/spiral/IMG_4916.PNG",
+    alt: "IMG 4916",
+  },
+  {
+    src: "/assets/spiral/IMG_5357.JPG",
+    alt: "IMG 5357",
+  },
+  {
+    src: "/assets/spiral/IMG_5880.PNG",
+    alt: "IMG 5880",
+  },
+  {
+    src: "/assets/spiral/IMG_6892.PNG",
+    alt: "IMG 6892",
+  },
+  {
+    src: "/assets/spiral/IMG_7165.PNG",
+    alt: "IMG 7165",
+  },
+  {
+    src: "/assets/spiral/IMG_7187.JPG",
+    alt: "IMG 7187",
+  },
+  {
+    src: "/assets/spiral/IMG_7188.JPG",
+    alt: "IMG 7188",
+  },
+  {
+    src: "/assets/spiral/IMG_7229.PNG",
+    alt: "IMG 7229",
+  },
+  {
+    src: "/assets/spiral/IMG_7351.JPG",
+    alt: "IMG 7351",
+  },
+  {
+    src: "/assets/spiral/IMG_7352.JPG",
+    alt: "IMG 7352",
+  },
+  {
+    src: "/assets/spiral/IMG_7531.JPG",
+    alt: "IMG 7531",
+  },
+  {
     src: "/assets/spiral/photo1.jpg",
     alt: "photo1",
   },

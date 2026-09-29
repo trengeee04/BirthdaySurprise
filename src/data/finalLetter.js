@@ -10,7 +10,7 @@ const finalLetter = {
   greeting: `For ${siteConfig.herName},`,
 
   intro:
-    "If you're reading this, it means you clicked YES to every single question. And honestly? I already knew you would. Because that's who you are — someone who chooses love, who chooses warmth, who chooses to stay.",
+    "Omfg :0 If you're reading this, it means you clicked YES to every single question :3. And honestly? I wasn't expecting that but it's not like I left you any other choice but to do so. But fr this is a website I made to remind you that I am so deeply in love with you or was whatever makes you sleep at night lmfao. You already know what I mean :3 ",
 
   paragraphs: [
     "I don't know when it happened exactly. Maybe it was gradual, maybe it was all at once. But somewhere along the way, you became the most important person in my world. And I don't say that lightly.",

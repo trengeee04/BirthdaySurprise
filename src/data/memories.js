@@ -4,6 +4,71 @@
 const memories = [
   {
     type: "video",
+    src: "/assets/memories/090160D1-EF56-49AE-982C-9E6C15E9ECAF.MP4",
+    caption: "090160D1 EF56 49AE 982C 9E6C15E9ECAF ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/10B2F61A-99C4-4BE7-87AD-48546392460A.MP4",
+    caption: "10B2F61A 99C4 4BE7 87AD 48546392460A ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/196D3E9F-D0C4-499C-97CE-6047F5031E40.MP4",
+    caption: "196D3E9F D0C4 499C 97CE 6047F5031E40 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/1E5BDCA3-62AB-405F-B18A-E96FAAB86E8D.MP4",
+    caption: "1E5BDCA3 62AB 405F B18A E96FAAB86E8D ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/6C3DD02E-643D-4BA7-B185-C320224C30C3.mov",
+    caption: "6C3DD02E 643D 4BA7 B185 C320224C30C3 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/8E0754A4-BE6B-451A-B5C0-BB908B92BE00.MP4",
+    caption: "8E0754A4 BE6B 451A B5C0 BB908B92BE00 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/8d7c7538820540ff81d3559663198c3f.MOV",
+    caption: "8d7c7538820540ff81d3559663198c3f ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/9D3713F6-73FF-44ED-8FEE-9E9A2197B74A.MP4",
+    caption: "9D3713F6 73FF 44ED 8FEE 9E9A2197B74A ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/A1F2C648-1402-4CBB-96C0-DADB4EB84953.MOV",
+    caption: "A1F2C648 1402 4CBB 96C0 DADB4EB84953 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/AF659A4C-9069-479E-9EFA-EA22715DB3E8.MOV",
+    caption: "AF659A4C 9069 479E 9EFA EA22715DB3E8 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/BB8368BD-28BD-4C7A-BC7C-F2363CA7C8C0.MP4",
+    caption: "BB8368BD 28BD 4C7A BC7C F2363CA7C8C0 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/DF8D9E66-27A7-42C9-9875-9543D7EEEF57.mov",
+    caption: "DF8D9E66 27A7 42C9 9875 9543D7EEEF57 ❤️",
+  },
+  {
+    type: "image",
+    src: "/assets/memories/IMG_7886.JPG",
+    caption: "IMG 7886 ❤️",
+  },
+  {
+    type: "video",
     src: "/assets/memories/memory1.mp4",
     caption: "memory1 ❤️",
   },

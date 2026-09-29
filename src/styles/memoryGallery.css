@@ -36,12 +36,15 @@
 
 .memory-polaroid {
   background: var(--white);
-  padding: 14px 14px 42px;
+  padding: 14px;
   border-radius: 4px;
   box-shadow: 0 4px 20px rgba(92, 55, 76, 0.1), 0 1px 4px rgba(0,0,0,0.05);
   transition: all var(--transition);
   cursor: pointer;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .memory-polaroid:nth-child(odd) {
@@ -72,6 +75,7 @@
 
 .memory-polaroid-video-wrapper {
   position: relative;
+  width: 100%;
 }
 
 .memory-polaroid-play-badge {
@@ -111,14 +115,12 @@
 }
 
 .memory-polaroid-caption {
-  position: absolute;
-  bottom: 10px;
-  left: 14px;
-  right: 14px;
   font-family: var(--font-heading);
   font-size: 1.1rem;
   color: var(--text-secondary);
   text-align: center;
+  margin: 0;
+  padding: 4px 0 8px;
 }
 
 /* ── Tape decoration ───────────────────────── */
