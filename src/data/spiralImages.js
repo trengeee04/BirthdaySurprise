@@ -3,6 +3,10 @@
 
 const spiralImages = [
   {
+    src: "/assets/spiral/8CC4F821-AE8E-4DE4-AF70-8FFF1D20DCBB.JPG",
+    alt: "8CC4F821 AE8E 4DE4 AF70 8FFF1D20DCBB",
+  },
+  {
     src: "/assets/spiral/IMG_4916.PNG",
     alt: "IMG 4916",
   },
@@ -35,6 +39,10 @@ const spiralImages = [
     alt: "IMG 7229",
   },
   {
+    src: "/assets/spiral/IMG_7350.JPG",
+    alt: "IMG 7350",
+  },
+  {
     src: "/assets/spiral/IMG_7351.JPG",
     alt: "IMG 7351",
   },
@@ -45,6 +53,30 @@ const spiralImages = [
   {
     src: "/assets/spiral/IMG_7531.JPG",
     alt: "IMG 7531",
+  },
+  {
+    src: "/assets/spiral/IMG_7686.PNG",
+    alt: "IMG 7686",
+  },
+  {
+    src: "/assets/spiral/IMG_7691.PNG",
+    alt: "IMG 7691",
+  },
+  {
+    src: "/assets/spiral/IMG_7707.JPG",
+    alt: "IMG 7707",
+  },
+  {
+    src: "/assets/spiral/IMG_7709.JPG",
+    alt: "IMG 7709",
+  },
+  {
+    src: "/assets/spiral/IMG_7940.jpg",
+    alt: "IMG 7940",
+  },
+  {
+    src: "/assets/spiral/IMG_7944.jpg",
+    alt: "IMG 7944",
   },
   {
     src: "/assets/spiral/photo1.jpg",

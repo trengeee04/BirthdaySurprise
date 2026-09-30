@@ -24,8 +24,58 @@ const memories = [
   },
   {
     type: "video",
+    src: "/assets/memories/25130562-F938-4343-B681-6C7861693B53.MP4",
+    caption: "25130562 F938 4343 B681 6C7861693B53 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/255828DE-5DFD-4CA6-A87D-3AA21C814099.MP4",
+    caption: "255828DE 5DFD 4CA6 A87D 3AA21C814099 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/29B0BE00-8AC3-40B1-82CF-5C0896FFD1B5.MP4",
+    caption: "29B0BE00 8AC3 40B1 82CF 5C0896FFD1B5 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/3D8A5976-309A-46F4-9F3D-D2ADFB64A4DC.MP4",
+    caption: "3D8A5976 309A 46F4 9F3D D2ADFB64A4DC ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/3E1B3A22-874C-47E9-9C6F-7D9252B72394.MP4",
+    caption: "3E1B3A22 874C 47E9 9C6F 7D9252B72394 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/40DFCF0A-2E4F-4562-B1C6-E5503D2F1726.MP4",
+    caption: "40DFCF0A 2E4F 4562 B1C6 E5503D2F1726 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/4EF237B1-EC07-4630-A470-2A423FF29413.MP4",
+    caption: "4EF237B1 EC07 4630 A470 2A423FF29413 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/6012606B-95B4-4299-BE13-D7646BCC5C97.MP4",
+    caption: "6012606B 95B4 4299 BE13 D7646BCC5C97 ❤️",
+  },
+  {
+    type: "video",
     src: "/assets/memories/6C3DD02E-643D-4BA7-B185-C320224C30C3.mov",
     caption: "6C3DD02E 643D 4BA7 B185 C320224C30C3 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/6F6FC8E4-89BD-4474-8A2A-6F1CBEA59F2B.MP4",
+    caption: "6F6FC8E4 89BD 4474 8A2A 6F1CBEA59F2B ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/72543C45-A7DC-4680-9E3F-6C53E628D992.MP4",
+    caption: "72543C45 A7DC 4680 9E3F 6C53E628D992 ❤️",
   },
   {
     type: "video",
@@ -39,6 +89,11 @@ const memories = [
   },
   {
     type: "video",
+    src: "/assets/memories/90E4AE88-B086-4207-9BFE-D9E0387F96D5.mov",
+    caption: "90E4AE88 B086 4207 9BFE D9E0387F96D5 ❤️",
+  },
+  {
+    type: "video",
     src: "/assets/memories/9D3713F6-73FF-44ED-8FEE-9E9A2197B74A.MP4",
     caption: "9D3713F6 73FF 44ED 8FEE 9E9A2197B74A ❤️",
   },
@@ -46,6 +101,11 @@ const memories = [
     type: "video",
     src: "/assets/memories/A1F2C648-1402-4CBB-96C0-DADB4EB84953.MOV",
     caption: "A1F2C648 1402 4CBB 96C0 DADB4EB84953 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/ADC75720-8FD1-474F-8CD5-5D4A42C7324B.MP4",
+    caption: "ADC75720 8FD1 474F 8CD5 5D4A42C7324B ❤️",
   },
   {
     type: "video",
@@ -59,8 +119,23 @@ const memories = [
   },
   {
     type: "video",
+    src: "/assets/memories/BF9D465B-C8CC-480A-8120-34C60F4E9A9A.MP4",
+    caption: "BF9D465B C8CC 480A 8120 34C60F4E9A9A ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/DECB3B6D-4CC4-4BF9-BC9C-B9DF51D42FD6.MP4",
+    caption: "DECB3B6D 4CC4 4BF9 BC9C B9DF51D42FD6 ❤️",
+  },
+  {
+    type: "video",
     src: "/assets/memories/DF8D9E66-27A7-42C9-9875-9543D7EEEF57.mov",
     caption: "DF8D9E66 27A7 42C9 9875 9543D7EEEF57 ❤️",
+  },
+  {
+    type: "video",
+    src: "/assets/memories/F7A7465A-0BCF-4698-AABC-21FAB61E8E87.MP4",
+    caption: "F7A7465A 0BCF 4698 AABC 21FAB61E8E87 ❤️",
   },
   {
     type: "image",
