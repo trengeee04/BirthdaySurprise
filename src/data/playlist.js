@@ -3,63 +3,93 @@
 
 const playlist = [
   {
-    title: "Colors (Official Lyric Video) Jake Llaguno",
-    artist: "Unknown Artist",
+    title: "Colors",
+    artist: "Jake Llaguno",
     src: "/assets/music/Colors (Official Lyric Video) Jake Llaguno.mp3",
   },
   {
-    title: "NAPA - Deslocado (Official Video)",
+    title: "Guzarish",
+    artist: "Javed Ali, Sonu Nigam",
+    src: "/assets/music/Full Video Guzarish Ghajini Aamir Khan, Asin A.R. Rahman Javed Ali, Sonu Nigam.mp3",
+  },
+  {
+    title: "Haan Tu Hain",
+    artist: "KK",
+    src: "/assets/music/Haan Tu Hain - Full Video Jannat Emraan Hashmi, Sonal Chauhan KK Pritam Sayeed Quadri.mp3",
+  },
+  {
+    title: "Khuda Jaane",
+    artist: "KK, Shilpa Rao",
+    src: "/assets/music/Khuda Jaane Full Song Bachna Ae Haseeno Ranbir Kapoor, Deepika Vishal Shekhar, KK, Shilpa.mp3",
+  },
+  {
+    title: "Deslocado",
     artist: "NAPA",
     src: "/assets/music/NAPA - Deslocado (Official Video).mp3",
   },
   {
-    title: "Harry Styles - Aperture (Official Video)",
-    artist: "HarryStylesVEVO",
+    title: "Prem Ki Naiya",
+    artist: "Neeraj Shridhar",
+    src: "/assets/music/Prem Ki Naiya Hai Ram Ke Bharose Full Video Song HD Ranbir Kapoor, Katrina Kaif.mp3",
+  },
+  {
+    title: "ily (i love you baby)",
+    artist: "Surf Mesa ft. Emilee",
+    src: "/assets/music/Surf Mesa - ily (i love you baby) (feat. Emilee) (Official Audio).mp3",
+  },
+  {
+    title: "Tu Jaane Na",
+    artist: "Atif Aslam",
+    src: "/assets/music/Tu Jaane Na - Lyrical Ajab Prem Ki Ghazab Kahani Atif Aslam Ranbir Kapoor, Katrina.mp3",
+  },
+  {
+    title: "Aperture",
+    artist: "Harry Styles",
     src: "/assets/music/aperture.mp3",
   },
   {
-    title: "back to friends",
-    artist: "Unknown Artist",
+    title: "Back to Friends",
+    artist: "sombr",
     src: "/assets/music/back-to-friends.mp3",
   },
   {
-    title: "cant help falling in love",
-    artist: "Unknown Artist",
+    title: "Can't Help Falling In Love",
+    artist: "Elvis Presley",
     src: "/assets/music/cant-help-falling-in-love.mp3",
   },
   {
-    title: "Vilen - Chidiya (Official  Video)",
-    artist: "Darks Music Company",
+    title: "Chidiya",
+    artist: "Vilen",
     src: "/assets/music/chidiya.mp3",
   },
   {
-    title: "duniyaa",
-    artist: "Unknown Artist",
+    title: "Duniyaa",
+    artist: "Akhil & Dhvani Bhanushali",
     src: "/assets/music/duniyaa.mp3",
   },
   {
-    title: "high on you",
-    artist: "Unknown Artist",
+    title: "High On You",
+    artist: "State of Sound",
     src: "/assets/music/high-on-you.mp3",
   },
   {
-    title: "Charlie Puth - Home (feat. Hikaru Utada)",
-    artist: "Charlie Puth",
+    title: "Home",
+    artist: "Edith Whiskers",
     src: "/assets/music/home.mp3",
   },
   {
-    title: "one of your girls",
-    artist: "Unknown Artist",
+    title: "One of Your Girls",
+    artist: "Troye Sivan",
     src: "/assets/music/one-of-your-girls.mp3",
   },
   {
-    title: "Nanku, Lambo Drive - Pyar Ki Si [Lyrics]",
-    artist: "Nanku",
+    title: "Pyar Ki Si",
+    artist: "Nanku, Lambo Drive",
     src: "/assets/music/pyar-ki-si.mp3",
   },
   {
-    title: "reckless",
-    artist: "Unknown Artist",
+    title: "Reckless",
+    artist: "Madison Beer",
     src: "/assets/music/reckless.mp3",
   }
 ];
